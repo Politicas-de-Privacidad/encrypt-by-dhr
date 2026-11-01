@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Encrypt by DHR — Privacidad</title>
+<meta name="description" content="Política de privacidad de Encrypt by DHR (Android y Windows) / Privacy Policy / Política de Privacidade">
+<meta name="color-scheme" content="light dark">
+</head>
+<body>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Source+Sans+3:wght@400;600&family=JetBrains+Mono&display=swap">
+<style>
+  :root{
+    --bg:#FAF6EE;
+    --surface:#FFFFFF;
+    --text:#2B241C;
+    --muted:#6E5F4E;
+    --accent:#9C6B24;
+    --accent-strong:#7A4F16;
+    --border:#E6DCC6;
+    --code-bg:#F1E9D8;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#1C1712;
+      --surface:#241E17;
+      --text:#EFE7D8;
+      --muted:#B7A98F;
+      --accent:#E0AC52;
+      --accent-strong:#F0BD68;
+      --border:#3A3122;
+      --code-bg:#2E2619;
+      color-scheme:dark;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#1C1712;
+    --surface:#241E17;
+    --text:#EFE7D8;
+    --muted:#B7A98F;
+    --accent:#E0AC52;
+    --accent-strong:#F0BD68;
+    --border:#3A3122;
+    --code-bg:#2E2619;
+    color-scheme:dark;
+  }
+
+  * { box-sizing: border-box; }
+  body{
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 1.65;
+    padding: clamp(28px, 6vw, 64px) 16px 80px;
+    -webkit-font-smoothing: antialiased;
+  }
+  main{
+    max-width: 680px;
+    margin: 0 auto;
+  }
+  h1,h2{
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+    text-wrap: balance;
+    color: var(--text);
+  }
+  header.doc-head{
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-between;
+    gap:16px;
+    margin-bottom: 8px;
+  }
+  .doc-head-id{
+    display:flex;
+    align-items:center;
+    gap:16px;
+  }
+  .mark{
+    width:48px; height:48px; flex:0 0 auto;
+    border-radius:12px;
+  }
+  .doc-head h1{
+    font-size: clamp(1.5rem, 4vw, 1.9rem);
+    margin:0;
+    font-weight:600;
+    letter-spacing:-0.01em;
+  }
+  .doc-head .kicker{
+    font-family: "Source Sans 3", sans-serif;
+    font-size:0.8rem;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color: var(--accent-strong);
+    font-weight:600;
+    margin:0 0 4px;
+  }
+
+  .langswitch{
+    display:flex;
+    gap:6px;
+    flex:0 0 auto;
+    padding-top: 2px;
+  }
+  .langswitch button{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 0.82rem;
+    font-weight:600;
+    border-radius: 999px;
+    border: 1.5px solid var(--border);
+    background: var(--surface);
+    color: var(--muted);
+    padding: 6px 14px;
+    cursor: pointer;
+    line-height:1;
+  }
+  .langswitch button.active{
+    border-color: var(--accent);
+    color: var(--accent-strong);
+    background: var(--code-bg);
+  }
+  .langswitch button:focus-visible{
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  .meta{
+    color: var(--muted);
+    font-size: 0.92rem;
+    margin: 4px 0 36px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+  }
+  .meta strong{ color: var(--text); }
+
+  .summary{
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: 10px;
+    padding: 20px 22px;
+    margin: 0 0 40px;
+  }
+  .summary h2{
+    font-size: 1.02rem;
+    margin: 0 0 12px;
+    font-weight: 600;
+    font-family: "Source Sans 3", sans-serif;
+    color: var(--accent-strong);
+  }
+  .summary ul{
+    margin: 0;
+    padding-left: 1.1em;
+    display:flex;
+    flex-direction:column;
+    gap: 8px;
+  }
+  .summary li{ font-size: 0.97rem; }
+
+  section{ margin: 40px 0; }
+  section h2{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0 0 14px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+  section p{ margin: 0 0 14px; }
+  section p:last-child{ margin-bottom:0; }
+
+  a{ color: var(--accent-strong); text-decoration-color: var(--border); text-underline-offset: 2px; }
+  a:hover{ text-decoration-color: currentColor; }
+
+  code, .tag{
+    font-family: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+    font-size: 0.85em;
+    background: var(--code-bg);
+    padding: 0.1em 0.4em;
+    border-radius: 5px;
+  }
+
+  .table-wrap{ overflow-x: auto; }
+  table{
+    width:100%;
+    border-collapse: collapse;
+    font-size: 0.93rem;
+    margin-top: 4px;
+  }
+  th, td{
+    text-align:left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  th{
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 600;
+    color: var(--muted);
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  td:first-child, th:first-child{ white-space: nowrap; }
+
+  .stores{
+    display:flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 6px;
+  }
+  .stores a{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    border:1px solid var(--border);
+    background: var(--surface);
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 0.88rem;
+    text-decoration: none;
+    color: var(--text);
+  }
+  .stores a:hover{ border-color: var(--accent); }
+
+  footer{
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.88rem;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:8px;
+  }
+</style>
+
+<main>
+  <header class="doc-head">
+    <div class="doc-head-id">
+      <svg class="mark" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Encrypt by DHR">
+        <rect width="128" height="128" rx="28" fill="#4B3F33"/>
+        <path d="M46 58 V40 a18 18 0 0 1 36 0 V58" fill="none" stroke="#CDC3B6" stroke-width="10" stroke-linecap="round"/>
+        <path d="M40 56 L88 56 L97 67 L97 84 A33 30 0 0 1 31 84 L31 67 Z" fill="#CDC3B6"/>
+        <circle cx="64" cy="72" r="7" fill="#B8863A"/>
+        <rect x="60.5" y="74" width="7" height="12" rx="3.5" fill="#B8863A"/>
+      </svg>
+      <div>
+        <p class="kicker">Encrypt by DHR</p>
+        <h1 data-lang="es">Política de Privacidad</h1>
+        <h1 data-lang="en" hidden>Privacy Policy</h1>
+        <h1 data-lang="pt" hidden>Política de Privacidade</h1>
+      </div>
+    </div>
+    <div class="langswitch" role="group" aria-label="Idioma / Language / Idioma">
+      <button type="button" data-lang-btn="es">ES</button>
+      <button type="button" data-lang-btn="en">EN</button>
+      <button type="button" data-lang-btn="pt">PT</button>
+    </div>
+  </header>
+
+  <p class="meta" data-lang="es">Última actualización: <strong>1 de noviembre de 2026</strong> · Aplica a las versiones de <strong>Android (Google Play)</strong> y <strong>Windows (Microsoft Store)</strong>.</p>
+  <p class="meta" data-lang="en" hidden>Last updated: <strong>November 1, 2026</strong> · Applies to the <strong>Android (Google Play)</strong> and <strong>Windows (Microsoft Store)</strong> versions.</p>
+  <p class="meta" data-lang="pt" hidden>Última atualização: <strong>1 de novembro de 2026</strong> · Aplica-se às versões para <strong>Android (Google Play)</strong> e <strong>Windows (Microsoft Store)</strong>.</p>
+
+  <div class="summary" data-lang="es">
+    <h2>Resumen rápido</h2>
+    <ul>
+      <li>Encrypt by DHR cifra y descifra archivos <strong>localmente, en tu dispositivo</strong>. Ningún archivo, contraseña ni contenido sale de tu equipo.</li>
+      <li>La app no tiene analítica, rastreo de uso ni recolección de datos personales.</li>
+      <li>Solo accede al archivo puntual que vos elegís a través del selector del sistema operativo — no tiene acceso general a tu almacenamiento.</li>
+      <li>Si grabás un audio, el micrófono se usa <strong>solo mientras grabás</strong> y la grabación se cifra en tu dispositivo: la App no la envía a ningún servidor.</li>
+      <li>Si tocás <strong>Compartir</strong>, el archivo ya cifrado lo envía la aplicación que vos elijas (por ejemplo WhatsApp o el correo), no Encrypt by DHR.</li>
+      <li>La única conexión a internet de la app es para procesar la compra de la licencia a través de Google Play o Microsoft Store.</li>
+    </ul>
+  </div>
+  <div class="summary" data-lang="en" hidden>
+    <h2>Quick summary</h2>
+    <ul>
+      <li>Encrypt by DHR encrypts and decrypts files <strong>locally, on your device</strong>. No file, password, or content ever leaves your device.</li>
+      <li>The app has no analytics, usage tracking, or personal data collection.</li>
+      <li>It only accesses the specific file you choose through the operating system's picker — it does not have general access to your storage.</li>
+      <li>If you record audio, the microphone is used <strong>only while you record</strong> and the recording is encrypted on your device: the App does not send it to any server.</li>
+      <li>If you tap <strong>Share</strong>, the already-encrypted file is sent by the app you choose (for example WhatsApp or email), not by Encrypt by DHR.</li>
+      <li>The app's only internet connection is to process the license purchase through Google Play or Microsoft Store.</li>
+    </ul>
+  </div>
+  <div class="summary" data-lang="pt" hidden>
+    <h2>Resumo rápido</h2>
+    <ul>
+      <li>O Encrypt by DHR criptografa e descriptografa arquivos <strong>localmente, no seu dispositivo</strong>. Nenhum arquivo, senha ou conteúdo sai do seu aparelho.</li>
+      <li>O aplicativo não tem análise de uso, rastreamento nem coleta de dados pessoais.</li>
+      <li>Ele só acessa o arquivo específico que você escolhe pelo seletor do sistema operacional — não tem acesso geral ao seu armazenamento.</li>
+      <li>Se você gravar um áudio, o microfone é usado <strong>somente enquanto você grava</strong> e a gravação é criptografada no seu dispositivo: o Aplicativo não a envia a nenhum servidor.</li>
+      <li>Se você tocar em <strong>Compartilhar</strong>, o arquivo já criptografado é enviado pelo aplicativo que você escolher (por exemplo, WhatsApp ou e-mail), e não pelo Encrypt by DHR.</li>
+      <li>A única conexão com a internet do aplicativo é para processar a compra da licença pelo Google Play ou pela Microsoft Store.</li>
+    </ul>
+  </div>
+
+  <section data-lang="es">
+    <h2>1. Introducción</h2>
+    <p>Encrypt by DHR ("la App") es una aplicación de cifrado y descifrado de archivos mediante AES-256, desarrollada por Daniel Hugo Ramos. Esta política explica qué información maneja la App, en sus versiones para Android y Windows, y por qué.</p>
+  </section>
+  <section data-lang="en" hidden>
+    <h2>1. Introduction</h2>
+    <p>Encrypt by DHR ("the App") is a file encryption and decryption application using AES-256, developed by Daniel Hugo Ramos. This policy explains what information the App handles, in its Android and Windows versions, and why.</p>
+  </section>
+  <section data-lang="pt" hidden>
+    <h2>1. Introdução</h2>
+    <p>O Encrypt by DHR ("o Aplicativo") é um aplicativo de criptografia e descriptografia de arquivos com AES-256, desenvolvido por Daniel Hugo Ramos. Esta política explica quais informações o Aplicativo trata, nas versões para Android e Windows, e por quê.</p>
+  </section>
+
+  <section data-lang="es">
+    <h2>2. Qué datos no recopilamos</h2>
+    <p>La App no recopila, almacena en servidores propios ni transmite a nadie tus archivos, tus contraseñas de cifrado ni el contenido de los documentos que cifrás o descifrás. Todo el proceso de cifrado y descifrado ocurre íntegramente en tu dispositivo, sin conexión a ningún servidor de Encrypt by DHR — de hecho, la App no opera ningún servidor propio.</p>
+    <p>La App tampoco incluye herramientas de analítica, medición de uso, publicidad ni ningún tipo de rastreo (<em>tracking</em>) de terceros.</p>
+  </section>
+  <section data-lang="en" hidden>
+    <h2>2. What data we don't collect</h2>
+    <p>The App does not collect, store on its own servers, or transmit to anyone your files, your encryption passwords, or the content of the documents you encrypt or decrypt. The entire encryption and decryption process happens entirely on your device, with no connection to any Encrypt by DHR server — in fact, the App does not operate any server of its own.</p>
+    <p>The App also does not include analytics tools, usage measurement, advertising, or any kind of third-party tracking.</p>
+  </section>
+  <section data-lang="pt" hidden>
+    <h2>2. Quais dados não coletamos</h2>
+    <p>O Aplicativo não coleta, não armazena em servidores próprios nem transmite a ninguém os seus arquivos, as suas senhas de criptografia ou o conteúdo dos documentos que você criptografa ou descriptografa. Todo o processo de criptografia e descriptografia acontece integralmente no seu dispositivo, sem conexão com nenhum servidor do Encrypt by DHR — na verdade, o Aplicativo não opera nenhum servidor próprio.</p>
+    <p>O Aplicativo também não inclui ferramentas de análise, medição de uso, publicidade nem qualquer tipo de rastreamento (<em>tracking</em>) de terceiros.</p>
+  </section>
+
+  <section data-lang="es">
+    <h2>3. Acceso a archivos y función Compartir</h2>
+    <p>Cuando elegís un archivo para cifrar o descifrar, la App abre el selector de archivos nativo del sistema operativo (en Android, el <em>Storage Access Framework</em>) para acceder únicamente al archivo que seleccionás de forma explícita, y te pregunta dónde guardar el resultado al terminar. La App no navega ni tiene acceso general al resto de tu almacenamiento.</p>
+    <p>Al cifrar un archivo, la App guarda además una copia temporal del archivo <strong>ya cifrado</strong> (nunca del original ni de tu contraseña) en la carpeta de caché privada de la App, para poder compartirla si lo pedís. Esa copia se elimina cuando procesás otro archivo, y el sistema puede borrarla en cualquier momento. Solo sale de tu dispositivo si tocás <strong>Compartir</strong>: en ese caso se abre el menú de compartir del sistema y el envío lo realiza la aplicación que elijas (por ejemplo WhatsApp o el correo), con su propia política de privacidad. Encrypt by DHR no recibe ese archivo. Por seguridad, no envíes la contraseña por el mismo canal que el archivo.</p>
+    <p><strong>Varios archivos y carpetas.</strong> Podés elegir varios archivos o una carpeta completa. La App los agrupa en un único archivo cifrado (<code>.pack</code>) y, al descifrarlo, recrea los archivos en una carpeta que vos elegís. La App solo lee los archivos o la carpeta que seleccionás de forma explícita. Para no pedirte la ubicación cada vez, puede recordar la <strong>carpeta de trabajo</strong> que elegiste (solo el permiso de acceso a esa carpeta, que podés cambiar o revocar desde los ajustes del sistema). Durante el proceso, la App usa archivos temporales en su caché privada, que se eliminan al terminar o la próxima vez que abrís la App. Nada de esto se envía a servidores de Encrypt by DHR.</p>
+    <p><strong>Audio, archivos recibidos y copias temporales.</strong> Si usás <strong>Grabar audio</strong>, la App te pide permiso para usar el micrófono y graba únicamente mientras vos lo indicás. La grabación se guarda un instante en la caché privada de la App, se cifra con tu contraseña y el audio sin cifrar se borra (sobrescribiéndolo) al terminar o la próxima vez que abras la App. Si recibís un archivo desde otra aplicación (por ejemplo WhatsApp o Telegram) y lo abrís con Encrypt by DHR, la App lo copia a su caché privada para poder procesarlo; esa copia se reemplaza con el siguiente archivo recibido. Con <strong>Escuchar audio</strong>, el audio se descifra solo en la memoria del teléfono y no se guarda. Al desencriptar y guardar un archivo, la App deja además una copia temporal en su caché privada para poder abrirlo desde el aviso de resultado; se reemplaza con el siguiente archivo y se borra cuando abrís la App. Al tocar <strong>Compartir</strong>, la App copia al portapapeles un texto con instrucciones y el enlace de descarga de la App (nunca tu contraseña) para que puedas pegarlo en el chat. Nada de esto se envía a servidores de Encrypt by DHR.</p>
+  </section>
+  <section data-lang="en" hidden>
+    <h2>3. File access and the Share feature</h2>
+    <p>When you choose a file to encrypt or decrypt, the App opens the operating system's native file picker (on Android, the Storage Access Framework) to access only the file you explicitly select, and asks you where to save the result once it's done. The App does not browse or have general access to the rest of your storage.</p>
+    <p>When you encrypt a file, the App also keeps a temporary copy of the <strong>already-encrypted</strong> file (never of the original or of your password) in the App's private cache folder, so it can be shared if you ask. That copy is deleted when you process another file, and the system may remove it at any time. It only leaves your device if you tap <strong>Share</strong>: the system share menu opens and the app you choose (for example WhatsApp or email) sends it, under its own privacy policy. Encrypt by DHR does not receive that file. For security, do not send the password through the same channel as the file.</p>
+    <p><strong>Multiple files and folders.</strong> You can choose several files or an entire folder. The App groups them into a single encrypted file (<code>.pack</code>) and, when decrypting, recreates the files in a folder you choose. The App only reads the files or folder you explicitly select. So that it does not ask for the location every time, it may remember the <strong>work folder</strong> you chose (only the access permission to that folder, which you can change or revoke in the system settings). During processing, the App uses temporary files in its private cache, which are deleted when finished or the next time you open the App. None of this is sent to Encrypt by DHR servers.</p>
+    <p><strong>Audio, received files and temporary copies.</strong> If you use <strong>Record audio</strong>, the App asks for permission to use the microphone and records only while you tell it to. The recording is briefly stored in the App's private cache, encrypted with your password, and the unencrypted audio is deleted (overwritten) when finished or the next time you open the App. If you receive a file from another app (for example WhatsApp or Telegram) and open it with Encrypt by DHR, the App copies it to its private cache so it can be processed; that copy is replaced by the next received file. With <strong>Listen to audio</strong>, the audio is decrypted only in the phone's memory and is not saved. When you decrypt and save a file, the App also leaves a temporary copy in its private cache so it can be opened from the result notice; it is replaced by the next file and deleted when you open the App. When you tap <strong>Share</strong>, the App copies to the clipboard a text with instructions and the App's download link (never your password) so you can paste it into the chat. None of this is sent to Encrypt by DHR servers.</p>
+  </section>
+  <section data-lang="pt" hidden>
+    <h2>3. Acesso a arquivos e função Compartilhar</h2>
+    <p>Quando você escolhe um arquivo para criptografar ou descriptografar, o Aplicativo abre o seletor de arquivos nativo do sistema operacional (no Android, o <em>Storage Access Framework</em>) para acessar somente o arquivo que você seleciona de forma explícita, e pergunta onde salvar o resultado ao terminar. O Aplicativo não navega nem tem acesso geral ao restante do seu armazenamento.</p>
+    <p>Ao criptografar um arquivo, o Aplicativo também guarda uma cópia temporária do arquivo <strong>já criptografado</strong> (nunca do original nem da sua senha) na pasta de cache privada do Aplicativo, para que possa ser compartilhada se você pedir. Essa cópia é excluída quando você processa outro arquivo, e o sistema pode apagá-la a qualquer momento. Ela só sai do seu dispositivo se você tocar em <strong>Compartilhar</strong>: nesse caso, abre-se o menu de compartilhamento do sistema e o envio é feito pelo aplicativo que você escolher (por exemplo, WhatsApp ou e-mail), sob a política de privacidade dele. O Encrypt by DHR não recebe esse arquivo. Por segurança, não envie a senha pelo mesmo canal do arquivo.</p>
+    <p><strong>Vários arquivos e pastas.</strong> Você pode escolher vários arquivos ou uma pasta inteira. O Aplicativo os agrupa em um único arquivo criptografado (<code>.pack</code>) e, ao descriptografar, recria os arquivos em uma pasta que você escolher. O Aplicativo só lê os arquivos ou a pasta que você seleciona de forma explícita. Para não pedir o local toda vez, ele pode lembrar a <strong>pasta de trabalho</strong> que você escolheu (apenas a permissão de acesso a essa pasta, que você pode alterar ou revogar nas configurações do sistema). Durante o processamento, o Aplicativo usa arquivos temporários no cache privado, que são apagados ao terminar ou na próxima vez que você abrir o Aplicativo. Nada disso é enviado a servidores do Encrypt by DHR.</p>
+    <p><strong>Áudio, arquivos recebidos e cópias temporárias.</strong> Se você usar <strong>Gravar áudio</strong>, o Aplicativo pede permissão para usar o microfone e grava somente enquanto você indicar. A gravação fica por um instante na pasta de cache privada do Aplicativo, é criptografada com a sua senha e o áudio sem criptografia é apagado (sobrescrito) ao terminar ou na próxima vez que você abrir o Aplicativo. Se você receber um arquivo de outro aplicativo (por exemplo, WhatsApp ou Telegram) e abri-lo com o Encrypt by DHR, o Aplicativo o copia para o cache privado para poder processá-lo; essa cópia é substituída pelo próximo arquivo recebido. Com <strong>Ouvir áudio</strong>, o áudio é descriptografado apenas na memória do aparelho e não é salvo. Ao descriptografar e salvar um arquivo, o Aplicativo também deixa uma cópia temporária no cache privado para poder abri-lo pelo aviso de resultado; ela é substituída pelo próximo arquivo e apagada quando você abre o Aplicativo. Ao tocar em <strong>Compartilhar</strong>, o Aplicativo copia para a área de transferência um texto com instruções e o link de download do Aplicativo (nunca a sua senha) para que você possa colá-lo no chat. Nada disso é enviado a servidores do Encrypt by DHR.</p>
+  </section>
+
+  <section data-lang="es">
+    <h2>4. Compras dentro de la app</h2>
+    <p>Encrypt by DHR se puede usar gratis durante un período de prueba; después, ofrece una licencia de uso de pago único ("de por vida") a través de <strong>Google Play Billing</strong> en Android o de <strong>Microsoft Store</strong> en Windows. El pago lo procesan Google o Microsoft directamente — Encrypt by DHR nunca ve ni almacena tus datos de tarjeta o de pago.</p>
+    <p>Podés consultar cómo esas plataformas manejan tus datos en sus propias políticas:</p>
+    <div class="stores">
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de privacidad de Google</a>
+      <a href="https://privacy.microsoft.com/" target="_blank" rel="noopener">Política de privacidad de Microsoft</a>
+    </div>
+  </section>
+  <section data-lang="en" hidden>
+    <h2>4. In-app purchases</h2>
+    <p>Encrypt by DHR can be used for free during a trial period; afterward, it offers a one-time ("lifetime") paid license through <strong>Google Play Billing</strong> on Android or <strong>Microsoft Store</strong> on Windows. Payment is processed directly by Google or Microsoft — Encrypt by DHR never sees or stores your card or payment details.</p>
+    <p>You can review how these platforms handle your data in their own policies:</p>
+    <div class="stores">
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>
+      <a href="https://privacy.microsoft.com/" target="_blank" rel="noopener">Microsoft Privacy Statement</a>
+    </div>
+  </section>
+  <section data-lang="pt" hidden>
+    <h2>4. Compras no aplicativo</h2>
+    <p>O Encrypt by DHR pode ser usado gratuitamente durante um período de teste; depois, oferece uma licença de uso de pagamento único ("vitalícia") pelo <strong>Google Play Billing</strong> no Android ou pela <strong>Microsoft Store</strong> no Windows. O pagamento é processado diretamente pelo Google ou pela Microsoft — o Encrypt by DHR nunca vê nem armazena os dados do seu cartão ou de pagamento.</p>
+    <p>Você pode consultar como essas plataformas tratam os seus dados nas políticas delas:</p>
+    <div class="stores">
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de privacidade do Google</a>
+      <a href="https://privacy.microsoft.com/" target="_blank" rel="noopener">Política de privacidade da Microsoft</a>
+    </div>
+  </section>
+
+  <section data-lang="es">
+    <h2>5. Permisos utilizados (Android)</h2>
+    <p>La versión de Android solicita únicamente estos tres permisos:</p>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th>Permiso</th><th>Para qué se usa</th></tr></thead>
+      <tbody>
+        <tr><td><code>INTERNET</code></td><td>Comunicarse con Google Play Billing para procesar la compra de la licencia.</td></tr>
+        <tr><td><code>com.android.vending.BILLING</code></td><td>Habilitar la compra dentro de la app a través de Google Play.</td></tr>
+        <tr><td><code>RECORD_AUDIO</code></td><td>Grabar un audio con el micrófono, solo cuando tocás "Grabar audio". Es opcional: sin este permiso el resto de la App funciona igual.</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>La App no solicita permisos de almacenamiento, cámara, ubicación, contactos ni ningún otro dato sensible. El micrófono solo se usa si vos grabás un audio.</p>
+  </section>
+  <section data-lang="en" hidden>
+    <h2>5. Permissions used (Android)</h2>
+    <p>The Android version requests only these three permissions:</p>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th>Permission</th><th>What it's used for</th></tr></thead>
+      <tbody>
+        <tr><td><code>INTERNET</code></td><td>Communicate with Google Play Billing to process the license purchase.</td></tr>
+        <tr><td><code>com.android.vending.BILLING</code></td><td>Enable in-app purchases through Google Play.</td></tr>
+        <tr><td><code>RECORD_AUDIO</code></td><td>Record audio with the microphone, only when you tap "Record audio". It is optional: without this permission the rest of the App works the same.</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>The App does not request storage, camera, location, contacts, or any other sensitive permissions. The microphone is used only if you record audio.</p>
+  </section>
+  <section data-lang="pt" hidden>
+    <h2>5. Permissões utilizadas (Android)</h2>
+    <p>A versão para Android solicita apenas estas três permissões:</p>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th>Permissão</th><th>Para que é usada</th></tr></thead>
+      <tbody>
+        <tr><td><code>INTERNET</code></td><td>Comunicar-se com o Google Play Billing para processar a compra da licença.</td></tr>
+        <tr><td><code>com.android.vending.BILLING</code></td><td>Habilitar a compra dentro do aplicativo pelo Google Play.</td></tr>
+        <tr><td><code>RECORD_AUDIO</code></td><td>Gravar um áudio com o microfone, somente quando você toca em "Gravar áudio". É opcional: sem essa permissão o restante do Aplicativo funciona normalmente.</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>O Aplicativo não solicita permissões de armazenamento, câmera, localização, contatos nem de qualquer outro dado sensível. O microfone só é usado se você gravar um áudio.</p>
+  </section>
+
+  <section data-lang="es">
+    <h2>6. Menores de edad</h2>
+    <p>La App no está dirigida a menores de 13 años y no recopila intencionalmente información de menores de edad.</p>
+  </section>
+  <section data-lang="en" hidden>
+    <h2>6. Children's privacy</h2>
+    <p>The App is not directed at children under 13 and does not knowingly collect information from minors.</p>
+  </section>
+  <section data-lang="pt" hidden>
+    <h2>6. Menores de idade</h2>
+    <p>O Aplicativo não é direcionado a menores de 13 anos e não coleta intencionalmente informações de menores de idade.</p>
+  </section>
+
+  <section data-lang="es">
+    <h2>7. Cambios a esta política</h2>
+    <p>Esta política puede actualizarse ocasionalmente para reflejar cambios en la App. Cualquier cambio se publicará en esta misma página, con la fecha de actualización en la parte superior.</p>
+  </section>
+  <section data-lang="en" hidden>
+    <h2>7. Changes to this policy</h2>
+    <p>This policy may be updated occasionally to reflect changes to the App. Any changes will be posted on this same page, with the update date at the top.</p>
+  </section>
+  <section data-lang="pt" hidden>
+    <h2>7. Alterações nesta política</h2>
+    <p>Esta política pode ser atualizada ocasionalmente para refletir mudanças no Aplicativo. Qualquer alteração será publicada nesta mesma página, com a data de atualização na parte superior.</p>
+  </section>
+
+  <section data-lang="es">
+    <h2>8. Contacto</h2>
+    <p>Si tenés preguntas sobre esta política de privacidad o sobre la App, podés escribir a <a href="mailto:otamendidhr@gmail.com">otamendidhr@gmail.com</a>.</p>
+  </section>
+  <section data-lang="en" hidden>
+    <h2>8. Contact</h2>
+    <p>If you have questions about this privacy policy or about the App, you can write to <a href="mailto:otamendidhr@gmail.com">otamendidhr@gmail.com</a>.</p>
+  </section>
+  <section data-lang="pt" hidden>
+    <h2>8. Contato</h2>
+    <p>Se você tiver dúvidas sobre esta política de privacidade ou sobre o Aplicativo, escreva para <a href="mailto:otamendidhr@gmail.com">otamendidhr@gmail.com</a>.</p>
+  </section>
+
+  <footer>
+    <span>Encrypt by DHR</span>
+    <span>com.danielramos.encryptdhr</span>
+  </footer>
+</main>
+
+<script>
+(function(){
+  function setLang(lang){
+    try {
+      document.querySelectorAll('[data-lang]').forEach(function(el){
+        el.hidden = el.getAttribute('data-lang') !== lang;
+      });
+      document.querySelectorAll('[data-lang-btn]').forEach(function(btn){
+        var active = btn.getAttribute('data-lang-btn') === lang;
+        btn.classList.toggle('active', active);
+        btn.setAttribute('aria-pressed', active ? 'true' : 'false');
+      });
+      document.documentElement.setAttribute('lang', lang === 'pt' ? 'pt-BR' : lang);
+    } catch (e) {}
+  }
+  document.querySelectorAll('[data-lang-btn]').forEach(function(btn){
+    btn.addEventListener('click', function(){ setLang(btn.getAttribute('data-lang-btn')); });
+  });
+  var preferred = 'es';
+  try {
+    var nav = (navigator.language || 'es').toLowerCase();
+    preferred = nav.indexOf('pt') === 0 ? 'pt' : (nav.indexOf('en') === 0 ? 'en' : 'es');
+  } catch (e) {}
+  setLang(preferred);
+})();
+</script>
+
+</body></html>

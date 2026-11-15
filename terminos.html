@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Encrypt by DHR — Condiciones del Servicio</title>
+<meta name="description" content="Condiciones del Servicio de Encrypt by DHR (Android y Windows) / Terms of Service / Termos de Serviço">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&amp;family=Source+Sans+3:wght@400;600&amp;family=JetBrains+Mono&amp;display=swap">
+<style>
+  :root{
+    --bg:#FAF6EE;
+    --surface:#FFFFFF;
+    --text:#2B241C;
+    --muted:#6E5F4E;
+    --accent:#9C6B24;
+    --accent-strong:#7A4F16;
+    --border:#E6DCC6;
+    --code-bg:#F1E9D8;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#1C1712;
+      --surface:#241E17;
+      --text:#EFE7D8;
+      --muted:#B7A98F;
+      --accent:#E0AC52;
+      --accent-strong:#F0BD68;
+      --border:#3A3122;
+      --code-bg:#2E2619;
+      color-scheme:dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  body{
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 1.65;
+    padding: clamp(28px, 6vw, 64px) 16px 80px;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+  }
+  main{ max-width: 680px; margin: 0 auto; }
+  h1,h2{
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+    text-wrap: balance;
+    color: var(--text);
+  }
+  header.doc-head{
+    display:flex; align-items:flex-start; justify-content:space-between;
+    gap:16px; margin-bottom: 8px;
+  }
+  .doc-head-id{ display:flex; align-items:center; gap:16px; }
+  .mark{ width:48px; height:48px; flex:0 0 auto; border-radius:12px; }
+  .doc-head h1{
+    font-size: clamp(1.5rem, 4vw, 1.9rem);
+    margin:0; font-weight:600; letter-spacing:-0.01em;
+  }
+  .doc-head .kicker{
+    font-family: "Source Sans 3", sans-serif;
+    font-size:0.8rem; letter-spacing:0.08em; text-transform:uppercase;
+    color: var(--accent-strong); font-weight:600; margin:0 0 4px;
+  }
+  .langswitch{ display:flex; gap:6px; flex:0 0 auto; padding-top: 2px; }
+  .langswitch button{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 0.82rem; font-weight:600;
+    border-radius: 999px; border: 1.5px solid var(--border);
+    background: var(--surface); color: var(--muted);
+    padding: 6px 14px; cursor: pointer; line-height:1;
+  }
+  .langswitch button.active{
+    border-color: var(--accent); color: var(--accent-strong); background: var(--code-bg);
+  }
+  .langswitch button:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
+  .meta{
+    color: var(--muted); font-size: 0.92rem;
+    margin: 4px 0 36px; padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+  }
+  .meta strong{ color: var(--text); }
+  .summary{
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: 10px;
+    padding: 20px 22px;
+    margin: 0 0 40px;
+  }
+  .summary h2{
+    font-size: 1.02rem; margin: 0 0 12px; font-weight: 600;
+    font-family: "Source Sans 3", sans-serif; color: var(--accent-strong);
+  }
+  .summary ul{ margin: 0; padding-left: 1.1em; display:flex; flex-direction:column; gap: 8px; }
+  .summary li{ font-size: 0.97rem; }
+  section{ margin: 40px 0; }
+  section h2{
+    font-size: 1.25rem; font-weight: 600;
+    margin: 0 0 14px; padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+  section p{ margin: 0 0 14px; }
+  section p:last-child{ margin-bottom:0; }
+  section ul{ margin: 0 0 14px; padding-left: 1.2em; }
+  section li{ margin-bottom: 6px; }
+  a{ color: var(--accent-strong); text-decoration-color: var(--border); text-underline-offset: 2px; }
+  a:hover{ text-decoration-color: currentColor; }
+  footer{
+    margin-top: 56px; padding-top: 20px;
+    border-top: 1px solid var(--border);
+    color: var(--muted); font-size: 0.88rem;
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px;
+  }
+</style>
+</head>
+<body>
+<main>
+  <header class="doc-head">
+    <div class="doc-head-id">
+      <svg class="mark" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Encrypt by DHR">
+        <rect width="128" height="128" rx="28" fill="#4B3F33"></rect>
+        <path d="M46 58 V40 a18 18 0 0 1 36 0 V58" fill="none" stroke="#CDC3B6" stroke-width="10" stroke-linecap="round"></path>
+        <path d="M40 56 L88 56 L97 67 L97 84 A33 30 0 0 1 31 84 L31 67 Z" fill="#CDC3B6"></path>
+        <circle cx="64" cy="72" r="7" fill="#B8863A"></circle>
+        <rect x="60.5" y="74" width="7" height="12" rx="3.5" fill="#B8863A"></rect>
+      </svg>
+      <div>
+        <p class="kicker">Encrypt by DHR</p>
+        <h1 data-lang="es">Condiciones del Servicio</h1>
+        <h1 data-lang="en" hidden>Terms of Service</h1>
+        <h1 data-lang="pt" hidden>Termos de Serviço</h1>
+      </div>
+    </div>
+    <div class="langswitch" role="group" aria-label="Idioma / Language / Idioma">
+      <button type="button" data-lang-btn="es" class="active" aria-pressed="true">ES</button>
+      <button type="button" data-lang-btn="en" aria-pressed="false">EN</button>
+      <button type="button" data-lang-btn="pt" aria-pressed="false">PT</button>
+    </div>
+  </header>
+
+  <p class="meta" data-lang="es">Última actualización: <strong>15 de noviembre de 2026</strong> · Aplica a las versiones de <strong>Android (Google Play)</strong> y <strong>Windows (Microsoft Store)</strong>.</p>
+  <p class="meta" data-lang="en" hidden>Last updated: <strong>November 15, 2026</strong> · Applies to the <strong>Android (Google Play)</strong> and <strong>Windows (Microsoft Store)</strong> versions.</p>
+  <p class="meta" data-lang="pt" hidden>Última atualização: <strong>15 de novembro de 2026</strong> · Aplica-se às versões para <strong>Android (Google Play)</strong> e <strong>Windows (Microsoft Store)</strong>.</p>
+
+  <!-- ===================== ESPAÑOL ===================== -->
+  <div class="summary" data-lang="es">
+    <h2>Lo más importante</h2>
+    <ul>
+      <li><strong>Tu clave no se puede recuperar.</strong> Si la olvidás, nadie (tampoco nosotros) puede abrir tus archivos encriptados.</li>
+      <li>Todo el cifrado ocurre en tu dispositivo. La App no guarda copias de tus archivos ni de tus claves.</li>
+      <li>Podés probarla gratis 10 días; después, la licencia de por vida es un pago único, sin suscripciones.</li>
+      <li>Las compras y los reembolsos se gestionan a través de Google Play o Microsoft Store.</li>
+    </ul>
+  </div>
+
+  <section data-lang="es">
+    <h2>1. Aceptación</h2>
+    <p>Estas Condiciones del Servicio regulan el uso de Encrypt by DHR ("la App"), desarrollada por Daniel Hugo Ramos. Al instalar o usar la App aceptás estas condiciones. Si no estás de acuerdo, no uses la App.</p>
+  </section>
+
+  <section data-lang="es">
+    <h2>2. Qué hace la App</h2>
+    <p>La App cifra y descifra archivos, carpetas y grabaciones de audio con AES-256, localmente en tu dispositivo, y te permite compartir los archivos ya cifrados con otras aplicaciones. No tiene servidores propios ni requiere una cuenta. El tratamiento de datos se explica en la <a href="./">Política de Privacidad</a>.</p>
+  </section>
+
+  <section data-lang="es">
+    <h2>3. Prueba gratuita y licencia</h2>
+    <ul>
+      <li>La App puede usarse gratis durante un período de prueba de 10 días.</li>
+      <li>Después, para seguir usando todas las funciones, se ofrece una <strong>licencia de uso de por vida</strong> con pago único, sin suscripciones ni cargos recurrentes. Podés comprarla en cualquier momento, incluso durante la prueba.</li>
+      <li>La compra la procesa Google Play (Android) o Microsoft Store (Windows) y queda asociada a tu cuenta de esa tienda. Si reinstalás la App o cambiás de dispositivo con la misma cuenta, podés recuperarla con <strong>Restaurar</strong>. Una compra hecha en una tienda no se transfiere a la otra.</li>
+      <li>La licencia es personal, no exclusiva e intransferible. No incluye derechos sobre el código ni sobre la marca de la App.</li>
+    </ul>
+  </section>
+
+  <section data-lang="es">
+    <h2>4. Pagos y reembolsos</h2>
+    <p>Los precios se muestran en la tienda correspondiente. Los pagos, la facturación y los reembolsos se rigen por las políticas de Google Play o de Microsoft Store, según dónde hayas comprado. Para pedir un reembolso, hacelo desde tu cuenta de esa tienda; si tenés algún problema, escribinos y te ayudamos.</p>
+  </section>
+
+  <section data-lang="es">
+    <h2>5. Tu clave y tus archivos</h2>
+    <ul>
+      <li><strong>Sos el único responsable de tus claves.</strong> La App no las guarda ni las envía a ningún lado, así que no existe forma de recuperar una clave olvidada ni de descifrar un archivo sin ella.</li>
+      <li>Antes de usar "Encriptar y Borrar", asegurate de recordar la clave: esa opción borra el archivo original y solo queda la versión encriptada. El borrado lo hace el sistema operativo y no es un borrado seguro (no sobrescribe los datos).</li>
+      <li>Te recomendamos conservar copias de seguridad de tus archivos importantes.</li>
+      <li>Si compartís un archivo encriptado, mandá la clave por otro medio distinto del archivo.</li>
+    </ul>
+  </section>
+
+  <section data-lang="es">
+    <h2>6. Uso aceptable</h2>
+    <p>Te comprometés a usar la App solo con fines legales y respetando los derechos de otras personas. No está permitido usarla para cometer delitos, ni copiar, modificar, descompilar o redistribuir la App salvo en lo que la ley permita expresamente.</p>
+  </section>
+
+  <section data-lang="es">
+    <h2>7. Garantía y responsabilidad</h2>
+    <p>La App se ofrece "tal como está". Trabajamos para que funcione bien, pero no garantizamos que esté libre de errores ni que sea adecuada para todos los usos. En la medida permitida por la ley, no somos responsables por la pérdida de datos o de acceso a archivos causada por claves olvidadas, archivos borrados o dañados, fallas del dispositivo o del sistema operativo, ni por el uso que hagas de la App. Nada de esto limita los derechos que te reconozcan las leyes de protección del consumidor de tu país.</p>
+  </section>
+
+  <section data-lang="es">
+    <h2>8. Cambios</h2>
+    <p>Podemos actualizar estas condiciones para reflejar cambios en la App o en la ley. La versión vigente se publica en esta misma página, con la fecha de actualización arriba.</p>
+  </section>
+
+  <section data-lang="es">
+    <h2>9. Ley aplicable</h2>
+    <p>Estas condiciones se rigen por las leyes de la República Argentina, sin perjuicio de las normas de protección del consumidor que te correspondan según tu país de residencia.</p>
+  </section>
+
+  <section data-lang="es">
+    <h2>10. Contacto</h2>
+    <p>Por cualquier consulta sobre estas condiciones o sobre la App, escribinos a <a href="mailto:encryptbydhr@gmail.com">encryptbydhr@gmail.com</a>.</p>
+  </section>
+
+  <!-- ===================== ENGLISH ===================== -->
+  <div class="summary" data-lang="en" hidden>
+    <h2>The most important points</h2>
+    <ul>
+      <li><strong>Your password cannot be recovered.</strong> If you forget it, nobody (including us) can open your encrypted files.</li>
+      <li>All encryption happens on your device. The App does not keep copies of your files or passwords.</li>
+      <li>You can try it free for 10 days; after that, the lifetime license is a one-time payment, with no subscriptions.</li>
+      <li>Purchases and refunds are handled through Google Play or Microsoft Store.</li>
+    </ul>
+  </div>
+
+  <section data-lang="en" hidden>
+    <h2>1. Acceptance</h2>
+    <p>These Terms of Service govern your use of Encrypt by DHR ("the App"), developed by Daniel Hugo Ramos. By installing or using the App, you accept these terms. If you do not agree, do not use the App.</p>
+  </section>
+
+  <section data-lang="en" hidden>
+    <h2>2. What the App does</h2>
+    <p>The App encrypts and decrypts files, folders and audio recordings with AES-256, locally on your device, and lets you share the encrypted files with other apps. It has no servers of its own and requires no account. How data is handled is explained in the <a href="./">Privacy Policy</a>.</p>
+  </section>
+
+  <section data-lang="en" hidden>
+    <h2>3. Free trial and license</h2>
+    <ul>
+      <li>The App can be used free of charge during a 10-day trial period.</li>
+      <li>After that, to keep using all features, a <strong>lifetime license</strong> is offered for a one-time payment, with no subscriptions or recurring charges. You can buy it at any time, even during the trial.</li>
+      <li>The purchase is processed by Google Play (Android) or Microsoft Store (Windows) and is linked to your account in that store. If you reinstall the App or change devices with the same account, you can recover it with <strong>Restore</strong>. A purchase made in one store does not carry over to the other.</li>
+      <li>The license is personal, non-exclusive and non-transferable. It does not grant any rights to the App's code or brand.</li>
+    </ul>
+  </section>
+
+  <section data-lang="en" hidden>
+    <h2>4. Payments and refunds</h2>
+    <p>Prices are shown in the corresponding store. Payments, billing and refunds are governed by the policies of Google Play or Microsoft Store, depending on where you bought the license. To request a refund, do so from your account in that store; if you have any problem, write to us and we will help.</p>
+  </section>
+
+  <section data-lang="en" hidden>
+    <h2>5. Your password and your files</h2>
+    <ul>
+      <li><strong>You are solely responsible for your passwords.</strong> The App does not store or send them anywhere, so there is no way to recover a forgotten password or to decrypt a file without it.</li>
+      <li>Before using "Encrypt and Delete", make sure you remember the password: this option deletes the original file and only the encrypted version remains. Deletion is done by the operating system and is not a secure wipe (it does not overwrite the data).</li>
+      <li>We recommend keeping backups of your important files.</li>
+      <li>If you share an encrypted file, send the password through a different channel than the file.</li>
+    </ul>
+  </section>
+
+  <section data-lang="en" hidden>
+    <h2>6. Acceptable use</h2>
+    <p>You agree to use the App only for lawful purposes and respecting the rights of others. You may not use it to commit crimes, nor copy, modify, decompile or redistribute the App except as expressly permitted by law.</p>
+  </section>
+
+  <section data-lang="en" hidden>
+    <h2>7. Warranty and liability</h2>
+    <p>The App is provided "as is". We work to make it work well, but we do not guarantee that it is error-free or suitable for every use. To the extent permitted by law, we are not liable for loss of data or loss of access to files caused by forgotten passwords, deleted or damaged files, device or operating system failures, or by how you use the App. Nothing here limits the rights granted to you by the consumer protection laws of your country.</p>
+  </section>
+
+  <section data-lang="en" hidden>
+    <h2>8. Changes</h2>
+    <p>We may update these terms to reflect changes in the App or in the law. The current version is published on this same page, with the update date at the top.</p>
+  </section>
+
+  <section data-lang="en" hidden>
+    <h2>9. Governing law</h2>
+    <p>These terms are governed by the laws of the Argentine Republic, without prejudice to the consumer protection rules that apply to you in your country of residence.</p>
+  </section>
+
+  <section data-lang="en" hidden>
+    <h2>10. Contact</h2>
+    <p>For any questions about these terms or about the App, write to <a href="mailto:encryptbydhr@gmail.com">encryptbydhr@gmail.com</a>.</p>
+  </section>
+
+  <!-- ===================== PORTUGUÊS ===================== -->
+  <div class="summary" data-lang="pt" hidden>
+    <h2>O mais importante</h2>
+    <ul>
+      <li><strong>Sua senha não pode ser recuperada.</strong> Se você esquecê-la, ninguém (nem nós) consegue abrir seus arquivos criptografados.</li>
+      <li>Toda a criptografia acontece no seu dispositivo. O Aplicativo não guarda cópias dos seus arquivos nem das suas senhas.</li>
+      <li>Você pode testá-lo grátis por 10 dias; depois, a licença vitalícia é um pagamento único, sem assinaturas.</li>
+      <li>As compras e os reembolsos são feitos pelo Google Play ou pela Microsoft Store.</li>
+    </ul>
+  </div>
+
+  <section data-lang="pt" hidden>
+    <h2>1. Aceitação</h2>
+    <p>Estes Termos de Serviço regulam o uso do Encrypt by DHR ("o Aplicativo"), desenvolvido por Daniel Hugo Ramos. Ao instalar ou usar o Aplicativo, você aceita estes termos. Se não concordar, não use o Aplicativo.</p>
+  </section>
+
+  <section data-lang="pt" hidden>
+    <h2>2. O que o Aplicativo faz</h2>
+    <p>O Aplicativo criptografa e descriptografa arquivos, pastas e gravações de áudio com AES-256, localmente no seu dispositivo, e permite compartilhar os arquivos já criptografados com outros aplicativos. Não tem servidores próprios nem exige conta. O tratamento de dados é explicado na <a href="./">Política de Privacidade</a>.</p>
+  </section>
+
+  <section data-lang="pt" hidden>
+    <h2>3. Teste grátis e licença</h2>
+    <ul>
+      <li>O Aplicativo pode ser usado gratuitamente durante um período de teste de 10 dias.</li>
+      <li>Depois, para continuar usando todas as funções, é oferecida uma <strong>licença vitalícia</strong> com pagamento único, sem assinaturas nem cobranças recorrentes. Você pode comprá-la a qualquer momento, inclusive durante o teste.</li>
+      <li>A compra é processada pelo Google Play (Android) ou pela Microsoft Store (Windows) e fica vinculada à sua conta nessa loja. Se você reinstalar o Aplicativo ou trocar de dispositivo com a mesma conta, pode recuperá-la com <strong>Restaurar</strong>. Uma compra feita em uma loja não passa para a outra.</li>
+      <li>A licença é pessoal, não exclusiva e intransferível. Não concede direitos sobre o código nem sobre a marca do Aplicativo.</li>
+    </ul>
+  </section>
+
+  <section data-lang="pt" hidden>
+    <h2>4. Pagamentos e reembolsos</h2>
+    <p>Os preços são exibidos na loja correspondente. Pagamentos, cobrança e reembolsos seguem as políticas do Google Play ou da Microsoft Store, conforme onde você comprou. Para pedir um reembolso, faça-o pela sua conta nessa loja; se tiver algum problema, escreva para nós e ajudaremos.</p>
+  </section>
+
+  <section data-lang="pt" hidden>
+    <h2>5. Sua senha e seus arquivos</h2>
+    <ul>
+      <li><strong>Você é o único responsável pelas suas senhas.</strong> O Aplicativo não as guarda nem as envia a lugar nenhum, então não existe forma de recuperar uma senha esquecida nem de descriptografar um arquivo sem ela.</li>
+      <li>Antes de usar "Criptografar e Apagar", confirme que você lembra a senha: essa opção apaga o arquivo original e fica apenas a versão criptografada. A exclusão é feita pelo sistema operacional e não é uma exclusão segura (não sobrescreve os dados).</li>
+      <li>Recomendamos manter cópias de segurança dos seus arquivos importantes.</li>
+      <li>Se você compartilhar um arquivo criptografado, envie a senha por um meio diferente do arquivo.</li>
+    </ul>
+  </section>
+
+  <section data-lang="pt" hidden>
+    <h2>6. Uso aceitável</h2>
+    <p>Você se compromete a usar o Aplicativo apenas para fins legais e respeitando os direitos de outras pessoas. Não é permitido usá-lo para cometer crimes, nem copiar, modificar, descompilar ou redistribuir o Aplicativo, exceto quando a lei permitir expressamente.</p>
+  </section>
+
+  <section data-lang="pt" hidden>
+    <h2>7. Garantia e responsabilidade</h2>
+    <p>O Aplicativo é oferecido "no estado em que se encontra". Trabalhamos para que funcione bem, mas não garantimos que esteja livre de erros nem que seja adequado para todos os usos. Na medida permitida pela lei, não somos responsáveis pela perda de dados ou de acesso a arquivos causada por senhas esquecidas, arquivos apagados ou danificados, falhas do dispositivo ou do sistema operacional, nem pelo uso que você fizer do Aplicativo. Nada disso limita os direitos garantidos pelas leis de proteção ao consumidor do seu país.</p>
+  </section>
+
+  <section data-lang="pt" hidden>
+    <h2>8. Alterações</h2>
+    <p>Podemos atualizar estes termos para refletir mudanças no Aplicativo ou na lei. A versão vigente é publicada nesta mesma página, com a data de atualização no topo.</p>
+  </section>
+
+  <section data-lang="pt" hidden>
+    <h2>9. Lei aplicável</h2>
+    <p>Estes termos são regidos pelas leis da República Argentina, sem prejuízo das normas de proteção ao consumidor aplicáveis no seu país de residência.</p>
+  </section>
+
+  <section data-lang="pt" hidden>
+    <h2>10. Contato</h2>
+    <p>Para qualquer dúvida sobre estes termos ou sobre o Aplicativo, escreva para <a href="mailto:encryptbydhr@gmail.com">encryptbydhr@gmail.com</a>.</p>
+  </section>
+
+  <footer>
+    <span>Encrypt by DHR</span>
+    <span>com.danielramos.encryptdhr</span>
+  </footer>
+</main>
+
+<script>
+(function(){
+  function setLang(lang){
+    try {
+      document.querySelectorAll('[data-lang]').forEach(function(el){
+        el.hidden = el.getAttribute('data-lang') !== lang;
+      });
+      document.querySelectorAll('[data-lang-btn]').forEach(function(btn){
+        var active = btn.getAttribute('data-lang-btn') === lang;
+        btn.classList.toggle('active', active);
+        btn.setAttribute('aria-pressed', active ? 'true' : 'false');
+      });
+      document.documentElement.setAttribute('lang', lang === 'pt' ? 'pt-BR' : lang);
+    } catch (e) {}
+  }
+  document.querySelectorAll('[data-lang-btn]').forEach(function(btn){
+    btn.addEventListener('click', function(){ setLang(btn.getAttribute('data-lang-btn')); });
+  });
+  var preferred = 'es';
+  try {
+    var nav = (navigator.language || 'es').toLowerCase();
+    preferred = nav.indexOf('pt') === 0 ? 'pt' : (nav.indexOf('en') === 0 ? 'en' : 'es');
+  } catch (e) {}
+  setLang(preferred);
+})();
+</script>
+</body></html>
